@@ -42,7 +42,7 @@ const Keypad: React.FC<KeypadProps> = ({
       <CalculatorButton onClick={onSquareClick} type="function">x²</CalculatorButton>
       <CalculatorButton onClick={onSquareRootClick} type="function">√</CalculatorButton>
       <CalculatorButton onClick={onPercentageClick} type="function">%</CalculatorButton>
-      <CalculatorButton onClick={onDeleteClick} type="function">CE</CalculatorButton>
+      <CalculatorButton onClick={onDeleteClick} type="delete">CE</CalculatorButton>
       
       {/* 세 번째 줄: 숫자 7-9 및 나누기 */}
       <CalculatorButton onClick={() => onDigitClick('7')}>7</CalculatorButton>

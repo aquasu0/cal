@@ -1,6 +1,6 @@
 import React from 'react';
 
-type ButtonType = 'number' | 'operation' | 'function' | 'equals';
+type ButtonType = 'number' | 'operation' | 'function' | 'equals' | 'delete';
 
 type CalculatorButtonProps = {
   onClick: () => void;
@@ -25,6 +25,8 @@ const CalculatorButton: React.FC<CalculatorButtonProps> = ({
         return 'bg-gray-400 hover:bg-gray-300 text-gray-900';
       case 'equals':
         return 'bg-blue-500 hover:bg-blue-400 text-white';
+      case 'delete':
+        return 'bg-red-500 hover:bg-red-400 text-white';
       default:
         return 'bg-gray-600 hover:bg-gray-500 text-white';
     }
